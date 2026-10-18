@@ -40,7 +40,7 @@
                                           onsubmit="return confirm('Hapus barang ini?')">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-danger btn-sm" aria-label="Hapus barang"></button>
+                                        <button type="submit" class="btn btn-danger btn-sm" aria-label="Hapus barang">Hapus</button>
                                     </form>
                                 </div>
                             </td>

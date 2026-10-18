@@ -103,7 +103,7 @@ body {
   transition: all .2s var(--ease); outline: none;
 }
 .search-box input:focus { border-color: var(--terra); box-shadow: 0 0 0 3px rgba(196,98,45,.12); }
-.search-box::before { content: '🔍'; position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 14px; pointer-events: none; }
+.search-box::before { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 14px; pointer-events: none; }
 
 /* ── TABEL (gaya report-table.css) ────────── */
 .rt-outer { display: flex; flex-direction: column; }

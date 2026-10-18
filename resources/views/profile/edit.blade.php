@@ -41,7 +41,7 @@
             @endif
 
             <div class="form-actions">
-                <button type="submit" class="btn btn-primary">💾 Simpan</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
             </div>
         </form>
         <form id="send-verification" method="POST" action="{{ route('verification.send') }}">@csrf</form>
@@ -82,7 +82,7 @@
             </div>
 
             <div class="form-actions">
-                <button type="submit" class="btn btn-primary">🔒 Ganti password</button>
+                <button type="submit" class="btn btn-primary">Ganti password</button>
             </div>
         </form>
 
@@ -107,7 +107,7 @@
             </div>
 
             <div class="form-actions">
-                <button type="submit" class="btn btn-danger">🗑️ Hapus akun</button>
+                <button type="submit" class="btn btn-danger">Hapus akun</button>
             </div>
         </form>
 

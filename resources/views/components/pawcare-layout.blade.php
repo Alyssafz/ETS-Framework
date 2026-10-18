@@ -14,18 +14,16 @@
 
 <nav class="sidebar">
   <div class="sidebar-logo">
-    <span class="paw">🐾</span>
-    <h1>{{ config('app.name') }}</h1>
-    <p>Manajemen Barang</p>
+    <h1>Manajemen Barang</h1>
   </div>
 
   <div class="nav-section">
     <div class="nav-label">Menu</div>
     <a href="{{ route('barang.index') }}" class="nav-item {{ request()->routeIs('barang.*') ? 'active' : '' }}">
-      <span class="icon">📦</span> Data Barang
+      Data Barang
     </a>
     <a href="{{ route('profile.edit') }}" class="nav-item {{ request()->routeIs('profile.*') ? 'active' : '' }}">
-      <span class="icon">👤</span> Profil
+      Profil
     </a>
   </div>
 
@@ -36,7 +34,7 @@
     </div>
     <form method="POST" action="{{ route('logout') }}" onsubmit="return confirm('Yakin mau logout?')">
       @csrf
-      <button type="submit" class="btn-logout">🚪 Logout</button>
+      <button type="submit" class="btn-logout">Logout</button>
     </form>
   </div>
 </nav>

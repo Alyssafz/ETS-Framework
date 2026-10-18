@@ -12,10 +12,6 @@
 </head>
 <body class="auth-body">
   <div class="auth-card">
-    <div class="logo">
-      <span class="paw">🐾</span>
-      <h1>{{ config('app.name') }}</h1>
-    </div>
     <div class="divider"></div>
     {{ $slot }}
   </div>
