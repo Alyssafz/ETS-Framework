@@ -1,4 +1,4 @@
-<x-pawcare-layout title="Tambah Barang" subtitle="Isi data barang baru">
+r<x-pawcare-layout title="Tambah Barang" subtitle="Isi data barang baru">
     <form action="{{ route('barang.store') }}" method="POST" class="form-card">
         @csrf
         @include('barang._form')

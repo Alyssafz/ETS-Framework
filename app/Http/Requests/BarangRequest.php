@@ -8,7 +8,6 @@ class BarangRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        // Akses sudah dijaga middleware 'auth' di routes/web.php
         return true;
     }
 

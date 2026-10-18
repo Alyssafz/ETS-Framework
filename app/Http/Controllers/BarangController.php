@@ -10,7 +10,6 @@ class BarangController extends Controller
 {
     public function index(Request $request)
     {
-        // where() memakai parameter binding -> aman dari SQL Injection
         $barangs = Barang::query()
             ->when($request->q, fn ($query, $q) => $query->where('nama_barang', 'like', '%' . $q . '%'))
             ->latest()
@@ -27,14 +26,12 @@ class BarangController extends Controller
 
     public function store(BarangRequest $request)
     {
-        // validated() hanya berisi field yang lolos validasi
         Barang::create($request->validated());
         return redirect()->route('barang.index')->with('success', 'Barang ditambahkan ✓');
     }
 
     public function edit(string $id)
     {
-        // findOrFail: ID tidak ada -> 404, bukan error 500
         $barang = Barang::findOrFail($id);
         return view('barang.edit', compact('barang'));
     }
