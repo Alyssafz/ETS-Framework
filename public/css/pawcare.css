@@ -93,7 +93,7 @@ body {
   outline: 3px solid rgba(196,98,45,.45); outline-offset: 2px;
 }
 
-/* ── TOOLBAR & SEARCH ─────────────────────── */
+/* ── TOOLBAR & SEARCH */
 .toolbar { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
 .search-box { position: relative; flex: 1; min-width: 220px; }
 .search-box input {
@@ -105,7 +105,7 @@ body {
 .search-box input:focus { border-color: var(--terra); box-shadow: 0 0 0 3px rgba(196,98,45,.12); }
 .search-box::before { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 14px; pointer-events: none; }
 
-/* ── TABEL (gaya report-table.css) ────────── */
+/* ── TABEL (gaya report-table.css) */
 .rt-outer { display: flex; flex-direction: column; }
 .rt-table-wrap {
   max-height: 65vh; overflow: auto; background: #fff;
@@ -149,7 +149,7 @@ a.pg:hover { border-color: #C4B5FD; color: var(--rt-accent); }
 .pg.active { background: linear-gradient(135deg, #4F46E5, #7C3AED); color: #fff; border-color: transparent; }
 .pg.disabled { opacity: .45; }
 
-/* ── FORM (gaya modal index.html) ─────────── */
+/* ── FORM (gaya modal index.html)*/
 .form-card {
   background: var(--card); border-radius: 18px; padding: 32px; max-width: 560px;
   border: 1px solid var(--border); box-shadow: var(--shadow);
@@ -182,7 +182,7 @@ label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spa
 ::-webkit-scrollbar-track { background: var(--cream); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-/* ── HALAMAN LOGIN / REGISTER (login.html) ── */
+/* ── HALAMAN LOGIN / REGISTER (login.html) */
 .auth-body {
   background: var(--bark); display: flex; align-items: center; justify-content: center;
   padding: 24px; position: relative; overflow: hidden;
