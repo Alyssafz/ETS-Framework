@@ -4,7 +4,7 @@
         @include('barang._form')
         <div class="form-actions">
             <a class="btn btn-secondary" href="{{ route('barang.index') }}">Batal</a>
-            <button type="submit" class="btn btn-primary">💾 Simpan</button>
+            <button type="submit" class="btn btn-primary">Simpan</button>
         </div>
     </form>
 </x-pawcare-layout>

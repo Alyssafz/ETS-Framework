@@ -1,6 +1,6 @@
 <x-pawcare-layout title="Data Barang" subtitle="Kelola barang yang tersedia">
     <x-slot name="actions">
-        <a class="btn btn-primary" href="{{ route('barang.create') }}">➕ Tambah Barang</a>
+        <a class="btn btn-primary" href="{{ route('barang.create') }}">Tambah Barang</a>
     </x-slot>
 
     <form method="GET" action="{{ route('barang.index') }}" class="toolbar">
@@ -35,12 +35,12 @@
                             <td class="num">{{ $b->qty }}</td>
                             <td class="act">
                                 <div class="act-group">
-                                    <a class="btn btn-edit btn-sm" href="{{ route('barang.edit', $b->id) }}">✏️ Edit</a>
+                                    <a class="btn btn-edit btn-sm" href="{{ route('barang.edit', $b->id) }}">Edit</a>
                                     <form action="{{ route('barang.destroy', $b->id) }}" method="POST"
                                           onsubmit="return confirm('Hapus barang ini?')">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-danger btn-sm" aria-label="Hapus barang">🗑️</button>
+                                        <button type="submit" class="btn btn-danger btn-sm" aria-label="Hapus barang"></button>
                                     </form>
                                 </div>
                             </td>
