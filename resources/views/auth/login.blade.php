@@ -18,8 +18,7 @@
             <input id="password" type="password" name="password"
                    placeholder="Masukkan password" required autocomplete="current-password">
         </div>
-        <label class="remember"><input type="checkbox" name="remember"> Ingat saya</label>
-        <button type="submit" class="btn-login">Masuk →</button>
+        <button type="submit" class="btn-login">Masuk</button>
     </form>
 
     @if (Route::has('register'))
