@@ -1,22 +1,22 @@
-# Cara pasang (Laravel + Breeze)
+# Cara pasang (setelah Breeze terpasang)
 
-1. Commit project ke git dulu (Breeze menimpa beberapa file).
-2. Pasang autentikasi:
-   composer require laravel/breeze --dev
-   php artisan breeze:install blade
-   npm install && npm run build
-3. Salin isi folder ini ke project, timpa file yang sama:
-   app/Models/Barang.php
-   app/Http/Requests/BarangRequest.php
-   app/Http/Controllers/BarangController.php
-   routes/web.php
-   resources/views/barang/*
-   public/css/barang.css
-4. Jalankan migrasi:
-   php artisan migrate
-5. Jalankan server:
-   php artisan serve
-   Buka /register untuk buat akun, lalu /barang.
+Salin isi folder ini ke project dan timpa file yang sama:
 
-Catatan: tabel `barangs` harus punya kolom nama_barang, harga, qty.
-File report-table.css milikmu tidak kutimpa; gaya baru ada di barang.css.
+  app/Models/Barang.php
+  app/Http/Requests/BarangRequest.php
+  app/Http/Controllers/BarangController.php
+  routes/web.php
+  public/css/pawcare.css
+  resources/views/components/pawcare-layout.blade.php
+  resources/views/layouts/guest.blade.php
+  resources/views/auth/login.blade.php
+  resources/views/auth/register.blade.php
+  resources/views/barang/*
+  resources/views/vendor/pagination/report.blade.php
+
+Lalu:
+  php artisan optimize:clear
+  php artisan serve
+
+Nama di sidebar dan halaman login diambil dari APP_NAME di .env.
+Tabel `barangs` harus punya kolom: nama_barang, harga, qty.
