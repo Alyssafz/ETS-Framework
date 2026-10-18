@@ -6,8 +6,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', fn () => redirect()->route('barang.index'));
 
-// Semua halaman barang wajib login (middleware auth)
-Route::middleware('auth')->group(function () {
+// Semua halaman barang wajib login (middleware auth).
+// PreventBackHistory: halaman tidak disimpan cache browser, jadi tombol Back
+// setelah logout tidak menampilkan halaman lama.
+Route::middleware(['auth', \App\Http\Middleware\PreventBackHistory::class])->group(function () {
     Route::resource('barang', BarangController::class)->except('show');
 
     // Route bawaan Breeze
